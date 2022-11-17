@@ -18,6 +18,8 @@ class OrderMenuVC: UIViewController {
         
         print(detailTableViewData)
         
+        self.tabBarController?.tabBar.isHidden = true
+        
         let cellNib = UINib(nibName: "OrderMenuTableViewCell", bundle: nil)
         orderMenuTableView.register(cellNib, forCellReuseIdentifier: "OrderMenuTableViewCell")
         

@@ -15,6 +15,7 @@
 		0304A6B42924DF86005621A3 /* OrderMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0304A6B22924DF86005621A3 /* OrderMenuTableViewCell.xib */; };
 		0304A6B62924E247005621A3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304A6B52924E247005621A3 /* SearchVC.swift */; };
 		0304A6B82926D389005621A3 /* showDetailMenuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304A6B72926D389005621A3 /* showDetailMenuDetail.swift */; };
+		0304A6BA2926E72E005621A3 /* PlaceOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304A6B92926E72E005621A3 /* PlaceOrderVC.swift */; };
 		038902D52924B8BF005F4049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038902D42924B8BF005F4049 /* AppDelegate.swift */; };
 		038902D72924B8BF005F4049 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038902D62924B8BF005F4049 /* SceneDelegate.swift */; };
 		038902D92924B8BF005F4049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038902D82924B8BF005F4049 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		0304A6B22924DF86005621A3 /* OrderMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderMenuTableViewCell.xib; sourceTree = "<group>"; };
 		0304A6B52924E247005621A3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		0304A6B72926D389005621A3 /* showDetailMenuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showDetailMenuDetail.swift; sourceTree = "<group>"; };
+		0304A6B92926E72E005621A3 /* PlaceOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderVC.swift; sourceTree = "<group>"; };
 		038902D12924B8BF005F4049 /* StarbucksMock3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarbucksMock3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038902D42924B8BF005F4049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		038902D62924B8BF005F4049 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				0304A6AF2924DF40005621A3 /* OrderMenuVC.swift */,
 				0304A6B22924DF86005621A3 /* OrderMenuTableViewCell.xib */,
 				0304A6B12924DF86005621A3 /* OrderMenuTableViewCell.swift */,
+				0304A6B92926E72E005621A3 /* PlaceOrderVC.swift */,
 				0304A6B72926D389005621A3 /* showDetailMenuDetail.swift */,
 				038902EE2924B9DB005F4049 /* ShopVC.swift */,
 				038902F02924B9E5005F4049 /* OtherVC.swift */,
@@ -189,6 +192,7 @@
 				038902E92924B9BB005F4049 /* HomeVC.swift in Sources */,
 				0304A6B32924DF86005621A3 /* OrderMenuTableViewCell.swift in Sources */,
 				0304A6A72924C6D9005621A3 /* MenuTableViewCell.swift in Sources */,
+				0304A6BA2926E72E005621A3 /* PlaceOrderVC.swift in Sources */,
 				038902D52924B8BF005F4049 /* AppDelegate.swift in Sources */,
 				0304A6B62924E247005621A3 /* SearchVC.swift in Sources */,
 				038902EB2924B9C7005F4049 /* PayVC.swift in Sources */,
