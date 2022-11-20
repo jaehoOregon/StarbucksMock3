@@ -8,9 +8,11 @@
 import UIKit
 
 class OrderVC: UIViewController {
-    
+
+// MARK: - Variables
     var tableViewData = [MenuData]()
-    
+
+// MARK: - IBOutlet
     @IBOutlet weak var menuTableView: UITableView!
     
     override func viewDidLoad() {
@@ -32,6 +34,7 @@ class OrderVC: UIViewController {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension OrderVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -57,7 +60,7 @@ extension OrderVC: UITableViewDelegate {
     }
 }
     
-
+// MARK: - UITableViewDataSource
 extension OrderVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

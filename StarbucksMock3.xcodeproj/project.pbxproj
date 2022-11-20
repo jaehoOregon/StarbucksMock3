@@ -94,34 +94,74 @@
 		038902D32924B8BF005F4049 /* StarbucksMock3 */ = {
 			isa = PBXGroup;
 			children = (
-				038902D42924B8BF005F4049 /* AppDelegate.swift */,
-				038902D62924B8BF005F4049 /* SceneDelegate.swift */,
+				03DE8EC12929FE260070D0EF /* Delegate */,
 				038902D82924B8BF005F4049 /* ViewController.swift */,
-				0304A6A92924C9B3005621A3 /* Menu.swift */,
-				03DE8EBB2929B8FF0070D0EF /* DiscountOption.swift */,
-				03DE8EB52929B1960070D0EF /* MenuSelected.swift */,
 				038902DA2924B8BF005F4049 /* Main.storyboard */,
-				038902E82924B9BB005F4049 /* HomeVC.swift */,
-				038902EA2924B9C7005F4049 /* PayVC.swift */,
-				038902EC2924B9D0005F4049 /* OrderVC.swift */,
-				0304A6A62924C6D9005621A3 /* MenuTableViewCell.xib */,
-				0304A6A52924C6D9005621A3 /* MenuTableViewCell.swift */,
-				0304A6AF2924DF40005621A3 /* OrderMenuVC.swift */,
-				0304A6B22924DF86005621A3 /* OrderMenuTableViewCell.xib */,
-				0304A6B12924DF86005621A3 /* OrderMenuTableViewCell.swift */,
-				0304A6B72926D389005621A3 /* showDetailMenuDetail.swift */,
-				0304A6B92926E72E005621A3 /* PlaceOrderVC.swift */,
-				03DE8EB72929B1EA0070D0EF /* PaymentVC.swift */,
-				03DE8EBE2929C90E0070D0EF /* selectedMenuTableViewCell.xib */,
-				03DE8EBD2929C90E0070D0EF /* selectedMenuTableViewCell.swift */,
-				038902EE2924B9DB005F4049 /* ShopVC.swift */,
-				038902F02924B9E5005F4049 /* OtherVC.swift */,
-				0304A6B52924E247005621A3 /* SearchVC.swift */,
+				03DE8EC32929FE810070D0EF /* Model */,
+				03DE8EC22929FE460070D0EF /* Tap bar View Controller */,
+				03DE8EC52929FEBD0070D0EF /* OrderVC Children */,
+				03DE8EC42929FEA20070D0EF /* TableViewCell */,
 				038902DD2924B8C0005F4049 /* Assets.xcassets */,
 				038902DF2924B8C0005F4049 /* LaunchScreen.storyboard */,
 				038902E22924B8C0005F4049 /* Info.plist */,
 			);
 			path = StarbucksMock3;
+			sourceTree = "<group>";
+		};
+		03DE8EC12929FE260070D0EF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				038902D62924B8BF005F4049 /* SceneDelegate.swift */,
+				038902D42924B8BF005F4049 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		03DE8EC22929FE460070D0EF /* Tap bar View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				038902E82924B9BB005F4049 /* HomeVC.swift */,
+				038902EA2924B9C7005F4049 /* PayVC.swift */,
+				038902EC2924B9D0005F4049 /* OrderVC.swift */,
+				038902EE2924B9DB005F4049 /* ShopVC.swift */,
+				038902F02924B9E5005F4049 /* OtherVC.swift */,
+			);
+			path = "Tap bar View Controller";
+			sourceTree = "<group>";
+		};
+		03DE8EC32929FE810070D0EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0304A6A92924C9B3005621A3 /* Menu.swift */,
+				03DE8EBB2929B8FF0070D0EF /* DiscountOption.swift */,
+				03DE8EB52929B1960070D0EF /* MenuSelected.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03DE8EC42929FEA20070D0EF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0304A6A62924C6D9005621A3 /* MenuTableViewCell.xib */,
+				0304A6A52924C6D9005621A3 /* MenuTableViewCell.swift */,
+				0304A6B22924DF86005621A3 /* OrderMenuTableViewCell.xib */,
+				0304A6B12924DF86005621A3 /* OrderMenuTableViewCell.swift */,
+				03DE8EBE2929C90E0070D0EF /* selectedMenuTableViewCell.xib */,
+				03DE8EBD2929C90E0070D0EF /* selectedMenuTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		03DE8EC52929FEBD0070D0EF /* OrderVC Children */ = {
+			isa = PBXGroup;
+			children = (
+				0304A6B52924E247005621A3 /* SearchVC.swift */,
+				0304A6AF2924DF40005621A3 /* OrderMenuVC.swift */,
+				0304A6B72926D389005621A3 /* showDetailMenuDetail.swift */,
+				0304A6B92926E72E005621A3 /* PlaceOrderVC.swift */,
+				03DE8EB72929B1EA0070D0EF /* PaymentVC.swift */,
+			);
+			path = "OrderVC Children";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

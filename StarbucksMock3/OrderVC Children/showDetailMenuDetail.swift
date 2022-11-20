@@ -13,11 +13,13 @@ import UIKit
 
 class showDetailMenuDetail: UIViewController {
 
+    // MARK: - Variables
     var selectedMenuData = [String]()
     
 //    var data: [String] = []
 //    var delegate: PassSelectedMenuData!
-    
+
+    // MARK: - IBOutlet
     @IBOutlet weak var drinkImage: UIView!
     @IBOutlet weak var drinkNameKorean: UILabel!
     @IBOutlet weak var drinkNameEnglish: UILabel!
@@ -44,9 +46,7 @@ class showDetailMenuDetail: UIViewController {
         drinkPrice.text = "\(price!)원"
     }
     
-    // MARK: - Navigation
-    
-    
+    // MARK: - IBAction
     @IBAction func buttonTapped(_ sender: UIButton) {
         
 //        print("selectedMenuData\(selectedMenuData)")

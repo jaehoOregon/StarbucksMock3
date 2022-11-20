@@ -9,16 +9,17 @@ import UIKit
 
 class PlaceOrderVC: UIViewController {
     
+    // MARK: - Variables
     var orderData = [String]()
+    var counter = 1
     var price: String = ""
     public var totalPrice: Int = 0
-    
+
+    // MARK: - IBOutlet
     @IBOutlet weak var menuName: UILabel!
-    
     @IBOutlet weak var showNumberOfCups: UILabel!
     @IBOutlet weak var showPrice: UILabel!
     
-    var counter = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,8 @@ class PlaceOrderVC: UIViewController {
 
     }
     
+    
+    // MARK: - IBAction
     @IBAction func addOne() {
         counter = counter + 1
         showNumberOfCups.text = String(counter)
@@ -87,7 +90,7 @@ class PlaceOrderVC: UIViewController {
 //        print("orderData:\(orderData)")
 //    }
 //}
-
+//
 
 
 

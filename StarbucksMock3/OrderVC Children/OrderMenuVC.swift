@@ -11,9 +11,11 @@ import UIKit
 
 class OrderMenuVC: UIViewController {
 
-    @IBOutlet weak var orderMenuTableView: UITableView!
-    
+    // MARK: - Variables
     var detailTableViewData = [[String]]()
+
+    // MARK: - IBOutlet
+    @IBOutlet weak var orderMenuTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,7 @@ class OrderMenuVC: UIViewController {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension OrderMenuVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -49,7 +52,7 @@ extension OrderMenuVC: UITableViewDelegate {
     }
 }
 
-
+// MARK: - UITableViewDataSource
 extension OrderMenuVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,6 +75,7 @@ extension OrderMenuVC: UITableViewDataSource {
     }
 }
 
+// MARK: - extension for Price Display Format
 extension Int {
     func withCommas() -> String {
         let numberFormatter = NumberFormatter()

@@ -16,9 +16,11 @@ struct cellData {
 
 class PaymentVC: UIViewController {
     
+    // MARK: - Variables
     var paymentTableViewData = [cellData]()
     var priceBeforeDiscount: Int = 0
 
+    // MARK: - IBOutlet
     @IBOutlet weak var paymentTableView: UITableView!
     @IBOutlet weak var selectedMenuTableView: UITableView!
     
@@ -38,6 +40,7 @@ class PaymentVC: UIViewController {
     
 }
 
+// MARK: - UITableViewDelegate
 extension PaymentVC: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -53,6 +56,7 @@ extension PaymentVC: UITableViewDelegate {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension PaymentVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if tableView.tag == 1 {
@@ -90,7 +94,6 @@ extension PaymentVC: UITableViewDataSource {
         }
     }
 
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         
         if tableView.tag == 0 {
