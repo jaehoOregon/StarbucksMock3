@@ -16,8 +16,6 @@ class OrderMenuTableViewCell: UITableViewCell {
     @IBOutlet weak var orderMenuPrice: UILabel!
     @IBOutlet weak var orderMenuSeasonImage: UIImageView!
 
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

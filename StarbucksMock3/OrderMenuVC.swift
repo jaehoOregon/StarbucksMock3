@@ -4,6 +4,8 @@
 //
 //  Created by Jaeho Jung on 2022/11/16.
 //
+//Hide tab bar in IOS swift app: https://stackoverflow.com/questions/28777943/hide-tab-bar-in-ios-swift-app
+
 
 import UIKit
 
@@ -16,7 +18,7 @@ class OrderMenuVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(detailTableViewData)
+//        print("OrderMenuVC: \(detailTableViewData)")
         
         self.tabBarController?.tabBar.isHidden = true
         
@@ -29,7 +31,7 @@ class OrderMenuVC: UIViewController {
 extension OrderMenuVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(detailTableViewData[indexPath.row])
+//        print(detailTableViewData[indexPath.row])
         
         performSegue(withIdentifier: "showDetailMenuDetail", sender: indexPath.row)
         
@@ -38,15 +40,10 @@ extension OrderMenuVC: UITableViewDelegate {
         if segue.identifier == "showDetailMenuDetail" {
             let vc = segue.destination as? showDetailMenuDetail
             if let index = sender as? Int {
-                print("This\(detailTableViewData[index])")
-                print("This\(detailTableViewData[index][0])")
-//                vc?.drinkNameKorean.text = detailTableViewData[index][0]
-//                vc?.drinkNameEnglish.text = detailTableViewData[index][1]
-//                vc?.drinkDescription.text = detailTableViewData[index][3]
-//                vc?.drinkDescription.text = detailTableViewData[index][2]
-                
-                
-//                vc?.detailTableViewData = tableViewData[index].MenuDetail
+                vc?.selectedMenuData = detailTableViewData[index]
+
+//                print("This\(detailTableViewData[index])")
+//                print("This\(detailTableViewData[index][0])")
             }
         }
     }
@@ -57,7 +54,7 @@ extension OrderMenuVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        print(detailTableViewData.count)
+//        print(detailTableViewData.count)
         return detailTableViewData.count
     }
     
@@ -66,13 +63,22 @@ extension OrderMenuVC: UITableViewDataSource {
         
         cell.orderMenuNameKorean.text = detailTableViewData[indexPath.row][0]
         cell.orderMenuNameEnglish.text = detailTableViewData[indexPath.row][1]
-        cell.orderMenuPrice.text = detailTableViewData[indexPath.row][2]
+        
+        let price = Int(detailTableViewData[indexPath.row][2])?.withCommas()
+//        print(price!)
+        cell.orderMenuPrice.text = "\(price!)원"
         
         return cell
     }
 }
 
-
+extension Int {
+    func withCommas() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return numberFormatter.string(from: NSNumber(value:self))!
+    }
+}
 
 
 
